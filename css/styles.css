@@ -1,0 +1,241 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Playfair Display", serif;
+  --text-color: #0a224a;
+  --main-bg: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  background-color: var(--main-bg);
+  line-height: 1.5;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  outline: 1px solid yellowgreen;
+}
+
+/* --------------ABOUT US MOBILE-------------- */
+
+.aboutus {
+  padding-top: 64px;
+}
+.aboutus-container {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+.aboutus-title {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  color: var(--text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.aboutus-title::before {
+  content: "";
+  position: absolute;
+
+  width: 30px;
+  height: 1px;
+  background-color: var(--text-color);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.aboutus-subtitle {
+  margin-bottom: 30px;
+  color: var(--text-color);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.aboutus-subtext {
+  margin-bottom: 30px;
+  color: var(--text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-item {
+}
+
+.aboutus-number {
+  margin-bottom: 14px;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.aboutus-text {
+  max-width: 170px;
+  margin: 0 auto;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.aboutus-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------------------ */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+}
+
+/* ----------------------------------------------------- */
+@media (max-width: 767px) {
+  .aboutus-list {
+    margin-bottom: 64px;
+  }
+  .aboutus-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .text-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* ----------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .aboutus {
+    padding-top: 36px;
+  }
+  .aboutus-subtitle {
+    font-size: 32px;
+    line-height: 1.41;
+  }
+  .aboutus-subtext {
+    font-size: 18px;
+  }
+  .aboutus-list {
+    display: flex;
+    gap: 33px;
+  }
+  .text-wrapper {
+    margin: 0 auto;
+    max-width: 608px;
+  }
+  .aboutus-text {
+    font-size: 18px;
+  }
+}
+
+/* ----------------------------------------------------- */
+@media screen and (max-width: 1439px) {
+  .aboutus-container {
+    flex-direction: column;
+  }
+  .aboutus-list {
+    margin-bottom: 66px;
+  }
+}
+/* ----------------------------------------------------- */
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .aboutus-container {
+    align-items: center;
+  }
+  .aboutus-img {
+    max-width: 536px;
+    height: 540px;
+  }
+  .text-wrapper {
+    margin: 0 auto;
+    margin-right: 93px;
+    max-width: 622px;
+  }
+  .aboutus-number {
+    margin-bottom: 19px;
+  }
+  .aboutus-list {
+    gap: 56px;
+  }
+}
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
